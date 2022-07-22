@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "eerie_biomes",
+  "version": "${version}",
+
+  "name": "Eerie Biomes",
+  "description": "This mod attempts to add custom biomes to the game.",
+  "authors": [
+    "What42"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/eerie_biomes/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.what42pizza.eerie_biomes.EerieBiomes"
+    ]
+  },
+  "mixins": [
+    "eerie_biomes.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
